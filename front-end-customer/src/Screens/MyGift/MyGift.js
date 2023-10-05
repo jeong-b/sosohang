@@ -13,7 +13,7 @@ import LoginRequired from "../../Components/LoginRequired/LoginRequired";
 
 
 export default function MyGift({ navigation, route }) {
-  // console.log("여기", route.params.activatedTabValue)
+  console.log("여기", route.params.activatedTabValue)
   const [activatedTab, setActivatedTab] = useState(route.params ? false : true);
   // const [activatedTab, setActivatedTab] = useState(true);
 
@@ -44,7 +44,7 @@ export default function MyGift({ navigation, route }) {
     try {
       const result = await getMyGiftList(tempUser);
       setDummy(result);
-      // console.log('여기', result);
+      console.log('여기', result);
     } catch (error) {
       console.error("Error fetching member data:", error);
     }

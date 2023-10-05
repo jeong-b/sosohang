@@ -32,8 +32,8 @@ function InputLogin() {
         }
       })
       .catch((err) => {
-        // console.log(err);
-        alert("로그인 실패");
+        console.log(err);
+        alert("로그인 실패하셨습니다. 관리자에게 문의하세요.");
       });
   };
 
