@@ -51,7 +51,7 @@ export default function SignUp({ navigation }) {
         .then((response) => {
           if (response.data.status = "success") {
             // console.log(response.data)
-            Alert.alert("알림", "인증 성공!");
+            Alert.alert("알림", "인증번호가 발송되었습니다!");
             setShowInput(true); // 인증 성공 시 인증번호 입력 창을 표시
             setAuthCode(response.data.message); // 요놈을 문자로 보냄
             // Alert.alert("알림", "인증 번호를 발송했습니다.");
