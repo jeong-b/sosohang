@@ -44,11 +44,11 @@ function Header() {
         setIsAuth(false);
       })
       .catch((err) => {
-        // console.log(err);
+        console.log(err);
       });
   };
 
-  // console.log(auth);
+  console.log(auth);
 
   const handleImageClick = () => {
     navigate("/"); // 메인 페이지로 이동

@@ -8,7 +8,7 @@ import Store from"../../Components/Store/Store";
 
 export default function PurchaseHistory({ data }) {
   const navigation = useNavigation();
-  // console.log(data);
+  console.log(data);
   // storeSeq를 기준으로 데이터 그룹화
   const groupedByStoreSeq = data.reduce((acc, order) => {
     if (!acc[order.storeSeq]) {

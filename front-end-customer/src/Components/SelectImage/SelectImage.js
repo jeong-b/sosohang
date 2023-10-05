@@ -36,7 +36,7 @@ export default function SelectImage({
   const resizeImage = async (uri) => {
     const photo = { uri: uri, width: 500, height: 500 }; // 예시로 width와 height를 설정했습니다.
     const resizedPhoto = await resizePhotoToMaxDimensionsAndCompressAsJPEG({ photo: photo });
-    console.log("resizeImage - Resized Image URI:", resizedPhoto.uri);
+    // console.log("resizeImage - Resized Image URI:", resizedPhoto.uri);
     return resizedPhoto.uri;
   };
   const resizePhotoToMaxDimensionsAndCompressAsJPEG = async ({ photo }) => {
