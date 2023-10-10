@@ -93,7 +93,7 @@ export default function NewStamp({ route, navigation }) {
         <Title title={"소복소복 도장"} />
         <View style={styles.subtitle}>
           {/* 상점 이름 */}
-          <Title title={noStamp[0][1].storeName} />
+          <SubTitle subTitle={'[' + noStamp[0][1].storeName + ' ]'} />
         </View>
         <Box
           content={

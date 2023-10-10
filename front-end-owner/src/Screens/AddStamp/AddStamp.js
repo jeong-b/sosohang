@@ -90,7 +90,7 @@ export default function AddStamp({ route, navigation }) {
         <Title title={"소복소복 도장"} />
         <View style={styles.subtitle}>
           {/* 상점 이름 */}
-          <Title title={stampData[0].store.storeName} />
+          <SubTitle subTitle={'[ ' + stampData[0].store.storeName + ' ]'} />
         </View>
         <Box
           content={

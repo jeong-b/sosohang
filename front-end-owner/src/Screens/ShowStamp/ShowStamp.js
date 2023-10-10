@@ -8,6 +8,7 @@ import SubTitle from "../../Components/SubTitle/SubTitle";
 import Box from "../../Components/Box/Box";
 import ModalCustom from "../../Components/ModalCustom/ModalCustom";
 import Tabs from "../../Components/Tabs/Tabs";
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 export default function ShowStamp({ navigation, route }) {
   const { storeSeq } = route.params;
@@ -47,7 +48,7 @@ export default function ShowStamp({ navigation, route }) {
 
   return (
     <>
-      <View style={styles.container}>
+      <KeyboardAwareScrollView style={styles.container}>
         <Title title={"소복소복 도장"} />
         <View style={styles.subContainer}>
           <Image style={styles.stampImage}
@@ -104,7 +105,7 @@ export default function ShowStamp({ navigation, route }) {
           }}
         />
 
-      </View>
+      </KeyboardAwareScrollView>
       <Tabs navigation={navigation} />
     </>
   );

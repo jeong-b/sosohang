@@ -53,7 +53,7 @@ export default function LogIn({ navigation }) {
         {/* <Text style={styles.info}>
           비밀번호 찾기는 웹사이트에서 가능합니다.
         </Text> */}
-        <View style={{ alignItems: "center" }}>
+        <View style={{ alignItems: "center", marginTop: 30 }}>
           <TextInput
             style={styles.input}
             placeholder="사업자등록번호를 입력해 주세요."
