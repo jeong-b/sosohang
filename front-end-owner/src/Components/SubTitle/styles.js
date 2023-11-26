@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   subTitle: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: "bold",
   },
 });
